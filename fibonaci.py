@@ -8,7 +8,6 @@ def fibonaci(nombre: int):
         nombreTerme = int(input("entrer le nombre de terme que vous voulez: "))
         essai += 1
         break
-
     i = 2
     while i < nombre:
         new = terme[i - 1] + terme[i - 2]
