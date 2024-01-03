@@ -32,7 +32,6 @@ else:
     print("le niveau est créer")
 
 
-
 def creerVerifierCler(key, value):
     if key in person:
         message = f" {key} est deja dans le dictionary"
@@ -40,6 +39,7 @@ def creerVerifierCler(key, value):
         person[key] = value
         message = f" {key} vient d'etre dans le dictionnaire"
     return message
+
 
 print(creerVerifierCler("maison", "deux etage"))
 print(creerVerifierCler("maison", "deux etage"))
@@ -52,3 +52,26 @@ print(person)
 for key in person:
     print(key, person[key])
 
+
+def compterNombreCle(dictonnaire):
+    nombre = len(dictonnaire.keys())
+    for value in dictonnaire.values():
+        if type(value) == dict:
+            nombre += compterNombreCle(value)
+    return nombre
+
+
+myDictionnary = {
+    "name": "lessan",
+    "surname": "aziz",
+    "age": 19,
+    "address": {
+        "pays": "Togo",
+        "Résidence": {
+            "ville": "Lomé",
+            "Quartier": "hédzranawoé"
+        }
+    },
+    "sex": "M",
+    }
+print(f"le nombre de cle principale et de sous clé dans ce dictionnaire est {compterNombreCle(myDictionnary)}")

@@ -7,3 +7,7 @@ print(notes)
 marks = [10, 11, 12, 15, 12, 13]
 marksTwo = map(lambda x: x + 2, marks)
 print(list(marksTwo))
+
+
+
+
