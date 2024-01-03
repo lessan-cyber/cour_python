@@ -13,7 +13,15 @@ person["address"]["Ville"] = "Lomé"
 person["notes"][1] = 13
 person["notes"].append(15)
 person["contact"] = "91 66 78 77"
-print(person)
+nombreCle = 0
+for key in person:
+    nombreCle += 1
+    if type(person[key]) == dict:
+        for subKeys in person[key]:
+            nombreCle += 1
+
+print(f"le nombre de est {nombreCle}")
+print("nombre de clé", person)
 print("longeur", len(person))
 print(len("bonjour"))
 
@@ -35,9 +43,12 @@ def creerVerifierCler(key, value):
 
 print(creerVerifierCler("maison", "deux etage"))
 print(creerVerifierCler("maison", "deux etage"))
-cle = input("entrer la clé")
-valeur = input("entrer la valeur")
-print(creerVerifierCler(cle, valeur))
+# cle = input("entrer la clé")
+# valeur = input("entrer la valeur")
+# print(creerVerifierCler(cle, valeur))
 print(creerVerifierCler("bank", 1500000000000000000))
 print(person)
+
+for key in person:
+    print(key, person[key])
 
