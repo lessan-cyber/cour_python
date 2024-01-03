@@ -35,7 +35,7 @@ else:
 
 def creerVerifierCler(key, value):
     if key in person:
-        message = f" {key} est deja dans le dictionnaire"
+        message = f" {key} est deja dans le dictionary"
     else:
         person[key] = value
         message = f" {key} vient d'etre dans le dictionnaire"
@@ -46,7 +46,7 @@ print(creerVerifierCler("maison", "deux etage"))
 # cle = input("entrer la clé")
 # valeur = input("entrer la valeur")
 # print(creerVerifierCler(cle, valeur))
-print(creerVerifierCler("bank", 1500000000000000000))
+print(creerVerifierCler("bank", 1500))
 print(person)
 
 for key in person:
