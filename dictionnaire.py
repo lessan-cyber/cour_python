@@ -38,4 +38,6 @@ print(creerVerifierCler("maison", "deux etage"))
 cle = input("entrer la clé")
 valeur = input("entrer la valeur")
 print(creerVerifierCler(cle, valeur))
+print(creerVerifierCler("bank", 1500000000000000000))
+print(person)
 
