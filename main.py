@@ -21,6 +21,8 @@ en python les booléan commence par une letter majuscule
 #     print("num est supérieur à 5")
 # print("autre instruction")
 
+
+
 # LES LISTES
 infoPerson = ["John", "Doe", 20, 15.5, False, "B2ITA"]
 notes = [15, 12, 13, 10]

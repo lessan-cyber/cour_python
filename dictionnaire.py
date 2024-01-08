@@ -61,6 +61,7 @@ def compterNombreCle(dictonnaire):
     return nombre
 
 
+
 myDictionnary = {
     "name": "lessan",
     "surname": "aziz",
