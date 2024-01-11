@@ -11,3 +11,20 @@ def nombrePaire(liste):
 def multipy(liste):
     listeMultiplication = liste.reduce(lambda x, y: x * y, liste)
     return listeMultiplication
+
+# def listeDeVoyelle(c):
+#     return list(filter(lambda x: x in "aeiouy", c))
+#
+# message = "Bonjour les gens"
+# print(listeDeVoyelle(message))
+#
+# def upper_caracter(message):
+#     return list(map(lambda x: x.upper(), message))
+#
+# print(upper_caracter(message))
+
+def upperTheFirstCaracter(mot):
+    return mot[0].upper() + mot[1:]
+
+my = "bonjour"
+print(upperTheFirstCaracter(my))
